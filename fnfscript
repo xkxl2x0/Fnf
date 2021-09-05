@@ -1,4 +1,4 @@
-print("lucas is watching u")
+warn("lucas is watching u")
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/uwuware-ui/main/main.lua"))()
 
 local framework, scrollHandler
@@ -180,7 +180,7 @@ local window = library:CreateWindow('Funky Friday') do
         local toggle = folder:AddToggle({ text = 'Auto', flag = 'autoPlayer' })
 
         -- Fixed to use toggle:SetState
-        folder:AddBind({ text = 'Autoplayer toggle', flag = 'autoPlayerToggle', key = Enum.KeyCode.Semicolon, callback = function() 
+        folder:AddBind({ text = 'Autoplayer toggle', flag = 'autoPlayerToggle', key = Enum.KeyCode.P, callback = function() 
             toggle:SetState(not toggle.state)
         end })
 
